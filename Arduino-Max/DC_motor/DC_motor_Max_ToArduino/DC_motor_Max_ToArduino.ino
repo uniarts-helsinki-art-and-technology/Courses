@@ -13,7 +13,7 @@ void setup() {
   // initialize the serial communication:
   Serial.begin(19200);
   // initialize the ledPin as an output:
-  pinMode(ledPin, OUTPUT);
+  pinMode(motorPin, OUTPUT);
   delay(10);
 }
 
@@ -27,9 +27,9 @@ void loop() {
       idIn = Serial.read();
       data = Serial.read();
 
-      if (idIn == ledPin) {
+      if (idIn == motorPin) {
         // set the brightness of pin 9:
-        analogWrite(ledPin, data);
+        analogWrite(motorPin, data);
       }
     }
   }

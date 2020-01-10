@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+		"rect" : [ 59.0, 104.0, 927.0, 631.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,24 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-8",
+					"maxclass" : "slider",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 102.0, 22.0, 20.0, 140.0 ],
+					"size" : 100.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 310.0, 300.75, 82.0, 22.0 ],
+					"patching_rect" : [ 302.0, 372.75, 82.0, 22.0 ],
 					"text" : "r ---ToArduino"
 				}
 
@@ -123,13 +136,13 @@
 					"presentation_rect" : [ 15.820945978164673, 109.0, 100.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 3,
-							"parameter_longname" : "baudRate",
-							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 5.0,
 							"parameter_initial" : [ 4 ],
-							"parameter_shortname" : "baudRate"
+							"parameter_shortname" : "baudRate",
+							"parameter_type" : 3,
+							"parameter_longname" : "baudRate",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -174,7 +187,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 62.0, 33.0, 20.0, 140.0 ],
+					"patching_rect" : [ 53.0, 22.0, 20.0, 140.0 ],
 					"size" : 256.0
 				}
 
@@ -290,7 +303,7 @@
 					"bgfillcolor_type" : "color",
 					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-149",
-					"items" : [ "Bluetooth-Incoming-Port", ",", "PioneerX-CM56-SerialPort" ],
+					"items" : [ "Bluetooth-Incoming-Port", ",", "BITalino-01-25-DevB", ",", "usbmodem1431410" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -301,11 +314,11 @@
 					"presentation_rect" : [ 0.820945978164673, 72.0, 154.179046630859375, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 3,
-							"parameter_longname" : "serialPort",
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "serialPort"
+							"parameter_shortname" : "serialPort",
+							"parameter_type" : 3,
+							"parameter_longname" : "serialPort"
 						}
 
 					}
@@ -374,7 +387,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 451.5, 227.0, 60.5, 22.0 ],
-					"text" : "<"
+					"text" : ""
 				}
 
 			}
@@ -676,6 +689,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
 					"midpoints" : [ 318.5, 126.5, 252.5, 126.5 ],
 					"source" : [ "obj-21", 0 ]
 				}
@@ -777,15 +797,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-51", 2 ],
+					"destination" : [ "obj-109", 2 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-6" : [ "baudRate", "baudRate", 0 ],
 			"obj-149" : [ "serialPort", "serialPort", 0 ],
+			"obj-6" : [ "baudRate", "baudRate", 0 ],
 			"parameterbanks" : 			{
 
 			}
