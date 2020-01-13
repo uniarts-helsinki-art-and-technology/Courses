@@ -1,2 +1,2 @@
 # Max4PhysicalComputing-Interaction
-support material for the course
+new support material for the course
