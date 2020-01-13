@@ -1386,8 +1386,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-6" : [ "baudRate", "baudRate", 0 ],
 			"obj-149" : [ "serialPort", "serialPort", 0 ],
+			"obj-6" : [ "baudRate", "baudRate", 0 ],
 			"parameterbanks" : 			{
 
 			}
