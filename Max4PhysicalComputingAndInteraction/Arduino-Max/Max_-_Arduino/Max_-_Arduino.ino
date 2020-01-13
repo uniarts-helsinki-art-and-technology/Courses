@@ -1,3 +1,5 @@
+int pos = 0;    // variable to store the servo position
+
 const int ledPin = 9;      // the pin that the LED is attached to
 
 uint16_t val;    // variable to read the value from the analog pin
@@ -30,8 +32,16 @@ void loop() {
         // set the brightness of pin 9:
         analogWrite(ledPin, data);
         Serial.println(data);
+
       }
     }
   }
 
+  // read the input on analog pin 0:
+  int sensorValue = analogRead(A0);
+  // print out the value you read:
+  //Serial.print("value ");
+  //Serial.println(sensorValue);
+  
+  delay(1);        // delay in between reads for stability
 }

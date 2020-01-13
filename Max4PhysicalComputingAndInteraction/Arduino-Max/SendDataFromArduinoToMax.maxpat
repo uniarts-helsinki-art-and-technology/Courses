@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 142.0, 97.0, 1124.0, 480.0 ],
+		"rect" : [ 362.0, 129.0, 1124.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -195,13 +195,13 @@
 					"presentation_rect" : [ 15.820945978164673, 109.0, 100.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "baudRate",
 							"parameter_type" : 3,
 							"parameter_longname" : "baudRate",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 5.0,
-							"parameter_initial" : [ 4 ],
-							"parameter_shortname" : "baudRate"
+							"parameter_initial" : [ 4 ]
 						}
 
 					}
@@ -271,11 +271,11 @@
 					"presentation_rect" : [ 15.820945978164673, 87.0, 154.179046630859375, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "serialPort",
 							"parameter_type" : 3,
 							"parameter_longname" : "serialPort",
 							"parameter_invisible" : 1,
-							"parameter_mmax" : 2.0,
-							"parameter_shortname" : "serialPort"
+							"parameter_mmax" : 2.0
 						}
 
 					}
@@ -505,8 +505,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 139.0, 161.0, 123.0, 22.0 ],
-					"text" : "serial e 115200 8 1 0"
+					"patching_rect" : [ 139.0, 161.0, 107.0, 22.0 ],
+					"text" : "serial e 9600 8 1 0"
 				}
 
 			}
@@ -785,8 +785,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1" : [ "baudRate", "baudRate", 0 ],
 			"obj-149" : [ "serialPort", "serialPort", 0 ],
+			"obj-1" : [ "baudRate", "baudRate", 0 ],
 			"parameterbanks" : 			{
 
 			}
