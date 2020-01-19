@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 362.0, 129.0, 1124.0, 480.0 ],
+		"rect" : [ 587.0, 79.0, 621.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,42 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-29",
+					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 392.0, 32.0, 22.0 ],
-					"text" : "print"
+					"patching_rect" : [ 145.0, 418.0, 111.0, 22.0 ],
+					"text" : "send analoguePin1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"htricolor" : [ 0.87, 0.82, 0.24, 1.0 ],
+					"id" : "obj-32",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 145.0, 378.0, 55.0, 22.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ],
+					"triscale" : 0.9
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 75.0, 462.0, 111.0, 22.0 ],
+					"text" : "send analoguePin0"
 				}
 
 			}
@@ -56,7 +86,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 326.0, 126.0, 21.0 ],
+					"patching_rect" : [ -79.0, 319.0, 126.0, 21.0 ],
 					"text" : "your prefix here -->"
 				}
 
@@ -65,11 +95,11 @@
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 139.0, 326.0, 68.0, 22.0 ],
-					"text" : "route value"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 75.0, 327.0, 88.0, 22.0 ],
+					"text" : "route pin0 pin1"
 				}
 
 			}
@@ -195,13 +225,13 @@
 					"presentation_rect" : [ 15.820945978164673, 109.0, 100.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "baudRate",
-							"parameter_type" : 3,
 							"parameter_longname" : "baudRate",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 5.0,
-							"parameter_initial" : [ 4 ]
+							"parameter_initial" : [ 4 ],
+							"parameter_shortname" : "baudRate",
+							"parameter_type" : 3
 						}
 
 					}
@@ -260,7 +290,7 @@
 					"bgfillcolor_type" : "color",
 					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-149",
-					"items" : [ "Bluetooth-Incoming-Port", ",", "BITalino-01-25-DevB", ",", "usbmodem1431410" ],
+					"items" : [ "Bluetooth-Incoming-Port", ",", "BITalino-01-25-DevB", ",", "PioneerX-CM56-SerialPort", ",", "usbmodem1431410" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -271,11 +301,11 @@
 					"presentation_rect" : [ 15.820945978164673, 87.0, 154.179046630859375, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "serialPort",
-							"parameter_type" : 3,
 							"parameter_longname" : "serialPort",
 							"parameter_invisible" : 1,
-							"parameter_mmax" : 2.0
+							"parameter_mmax" : 2.0,
+							"parameter_shortname" : "serialPort",
+							"parameter_type" : 3
 						}
 
 					}
@@ -335,7 +365,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 139.0, 408.0, 55.0, 22.0 ],
+					"patching_rect" : [ 75.0, 422.0, 55.0, 22.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"triscale" : 0.9
@@ -505,8 +535,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 139.0, 161.0, 107.0, 22.0 ],
-					"text" : "serial e 9600 8 1 0"
+					"patching_rect" : [ 139.0, 161.0, 104.0, 22.0 ],
+					"text" : "serial f 9600 8 1 0"
 				}
 
 			}
@@ -718,17 +748,29 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"order" : 1,
-					"source" : [ "obj-27", 0 ]
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-27", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"order" : 0,
 					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -785,8 +827,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-149" : [ "serialPort", "serialPort", 0 ],
 			"obj-1" : [ "baudRate", "baudRate", 0 ],
+			"obj-149" : [ "serialPort", "serialPort", 0 ],
 			"parameterbanks" : 			{
 
 			}

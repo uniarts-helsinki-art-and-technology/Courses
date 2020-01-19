@@ -13,6 +13,7 @@ void loop() {
   
  readValue = analogRead(potPin);  //Read the voltage on the Potentiometer
  writeValue = (255./1023.) * readValue; //Calculate Write Value for LED
+ writeValue = map(readValue, 200, 600, 0, 255);
  analogWrite(LEDPin, writeValue);      //Write to the LED
  Serial.print("You are writing a value of ");  //for debugging print your values
  Serial.println(writeValue);
