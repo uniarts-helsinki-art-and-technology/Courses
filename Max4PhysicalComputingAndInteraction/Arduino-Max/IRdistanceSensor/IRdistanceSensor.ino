@@ -26,16 +26,16 @@ void loop() {
   value = analogRead(pResistor);
 
   distanceSensorValue = analogRead(distanceSensor);
-  float volts = analogRead(distanceSensor)*0.0048828125;  // value from sensor * (5/1024)
-  int distance = 13*pow(volts, -1); // worked out from datasheet graph
-  //delay(1000); // slow down serial port 
-  
-  if (distance <= 30){
+  float volts = analogRead(distanceSensor) * 0.0048828125; // value from sensor * (5/1024)
+  int distance = 13 * pow(volts, -1); // worked out from datasheet graph
+  //delay(1000); // slow down serial port
+
+  if (distance <= 30) {
     Serial.print("distanceSensorValue: ");
-  Serial.println(distance);
+    Serial.println(distance);
   }
 
-  
+
 
   //  writeValue = (255. / 1023.) * readValue; //Calculate Write Value for LED
   //  writeValue = map(readValue, 200, 600, 0, 255);

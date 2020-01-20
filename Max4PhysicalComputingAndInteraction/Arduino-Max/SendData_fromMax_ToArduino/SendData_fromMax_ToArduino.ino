@@ -26,11 +26,11 @@ void loop() {
       idIn = Serial.read();
       data = Serial.read();
 
-      //if (idIn == ledPin) {
-        // set the brightness of pin 9:
+      if (idIn == ledPin) {
+        //set the brightness of pin 9:
         analogWrite(idIn, data);
         Serial.println(data);
-     // }
+      }
     }
   }
 
