@@ -27,7 +27,7 @@ void loop() {
     Serial.print("Distance = ");
     Serial.print(distance);
     Serial.println(" cm");
-    delay(500);
+    //delay(500);
   }
-  delay(500);
+  delay(50);
 }
