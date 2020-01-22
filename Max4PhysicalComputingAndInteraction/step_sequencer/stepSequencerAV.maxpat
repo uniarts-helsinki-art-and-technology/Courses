@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1312.0, 718.0 ],
+		"rect" : [ 34.0, 79.0, 978.0, 718.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,148 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-24",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1031.0, 84.0, 213.0, 47.0 ],
+					"presentation_linecount" : 4,
+					"text" : "VIZZIE MODULES FOR VIDEO EFFECTS "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 640.0, 29.0, 212.0, 27.0 ],
+					"text" : "VIDEO"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 352.0, 29.0, 211.0, 27.0 ],
+					"text" : "AUDIO"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 187.0, 42.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "## Turn a video into dust ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-8",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.foggr.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1039.0, 191.0, 188.0, 130.0 ],
+					"prototypename" : "pixl",
+					"varname" : "foggr",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "## Convert a video into a line drawing ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-15",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.sketchr.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1039.0, 336.5, 177.0, 130.0 ],
+					"prototypename" : "pixl",
+					"varname" : "sketchr",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "## VIZZIE video projector interface ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-5",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.projectr.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1039.0, 478.5, 168.0, 108.0 ],
+					"prototypename" : "pixl",
+					"varname" : "projectr",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"id" : "obj-2",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"orientation" : 0,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 31.0, 234.0, 220.0, 112.0 ],
+					"setminmax" : [ 1.0, 8.0 ],
+					"settype" : 0,
+					"slidercolor" : [ 0.866666666666667, 0.180392156862745, 0.031372549019608, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-57",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.0, 619.0, 60.0, 22.0 ],
+					"patching_rect" : [ 208.0, 622.0, 60.0, 22.0 ],
 					"text" : "clip 0. 1.5"
 				}
 
@@ -56,7 +192,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 992.0, 599.0, 160.0, 120.0 ]
+					"patching_rect" : [ 820.0, 600.0, 160.0, 120.0 ]
 				}
 
 			}
@@ -69,7 +205,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 809.0, 536.0, 148.0, 23.0 ],
+					"patching_rect" : [ 710.0, 537.0, 148.0, 23.0 ],
 					"text" : "jit.op @op <=p @val 0.5"
 				}
 
@@ -81,7 +217,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 568.0, 599.0, 160.0, 120.0 ]
+					"patching_rect" : [ 469.0, 600.0, 160.0, 120.0 ]
 				}
 
 			}
@@ -96,7 +232,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1118.0, 429.0, 54.0, 23.0 ],
+					"patching_rect" : [ 878.0, 517.5, 54.0, 23.0 ],
 					"triscale" : 0.9
 				}
 
@@ -110,22 +246,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 739.0, 493.5, 131.0, 23.0 ],
+					"patching_rect" : [ 640.0, 494.5, 131.0, 23.0 ],
 					"text" : "jit.op @op * @val 0.5"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-45",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1329.0, 397.0, 172.0, 25.0 ],
-					"text" : "You can use a scalar, too"
 				}
 
 			}
@@ -137,7 +259,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 86.0, 90.0, 24.0, 24.0 ]
+					"patching_rect" : [ 54.0, 93.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -148,7 +270,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 137.0, 51.0, 32.0, 22.0 ],
+					"patching_rect" : [ 105.0, 42.0, 32.0, 22.0 ],
 					"text" : "t b b"
 				}
 
@@ -160,7 +282,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 216.0, 51.0, 73.0, 22.0 ],
+					"patching_rect" : [ 133.0, 84.0, 73.0, 22.0 ],
 					"text" : "random 500"
 				}
 
@@ -172,7 +294,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 137.0, 90.0, 47.0, 22.0 ],
+					"patching_rect" : [ 105.0, 129.0, 47.0, 22.0 ],
 					"text" : "delay 0"
 				}
 
@@ -186,7 +308,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 47.0, 5.5, 121.0, 23.0 ],
+					"patching_rect" : [ 15.0, 8.5, 121.0, 23.0 ],
 					"text" : "metro 8n @active 1"
 				}
 
@@ -198,7 +320,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1086.0, 361.5, 71.0, 22.0 ],
+					"patching_rect" : [ 878.0, 404.0, 71.0, 22.0 ],
 					"text" : "r brightness"
 				}
 
@@ -211,7 +333,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 96.0, 553.5, 115.0, 144.0 ],
+					"patching_rect" : [ 64.0, 556.5, 115.0, 144.0 ],
 					"setminmax" : [ 0.0, 1.0 ]
 				}
 
@@ -223,7 +345,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.0, 567.0, 90.0, 22.0 ],
+					"patching_rect" : [ 208.0, 570.0, 90.0, 22.0 ],
 					"text" : "scale 0. 1. 0. 2."
 				}
 
@@ -234,7 +356,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 240.0, 680.5, 73.0, 22.0 ],
+					"patching_rect" : [ 208.0, 683.5, 73.0, 22.0 ],
 					"text" : "s brightness"
 				}
 
@@ -246,7 +368,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 240.0, 530.0, 74.0, 22.0 ],
+					"patching_rect" : [ 208.0, 533.0, 74.0, 22.0 ],
 					"text" : "snapshot~ 1"
 				}
 
@@ -258,7 +380,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 240.0, 484.0, 67.0, 22.0 ],
+					"patching_rect" : [ 208.0, 487.0, 67.0, 22.0 ],
 					"text" : "slide~ 5 25"
 				}
 
@@ -270,7 +392,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 240.0, 449.0, 106.0, 22.0 ],
+					"patching_rect" : [ 208.0, 452.0, 106.0, 22.0 ],
 					"text" : "average~ 512 rms"
 				}
 
@@ -282,7 +404,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 739.0, 86.0, 45.0, 22.0 ],
+					"patching_rect" : [ 640.0, 87.0, 45.0, 22.0 ],
 					"text" : "r idFile"
 				}
 
@@ -294,7 +416,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.0, 95.0, 45.0, 22.0 ],
+					"patching_rect" : [ 352.0, 98.0, 45.0, 22.0 ],
 					"text" : "r idFile"
 				}
 
@@ -305,7 +427,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 279.0, 391.0, 67.0, 22.0 ],
+					"patching_rect" : [ 247.0, 394.0, 67.0, 22.0 ],
 					"text" : "send idFile"
 				}
 
@@ -317,8 +439,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 549.5, 440.5, 148.0, 22.0 ],
-					"text" : "done 6 jongly.aif"
+					"patching_rect" : [ 517.5, 443.5, 148.0, 22.0 ],
+					"text" : "done 1 vibes-a1.aif"
 				}
 
 			}
@@ -333,7 +455,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 549.5, 414.5, 80.0, 23.0 ],
+					"patching_rect" : [ 517.5, 417.5, 80.0, 23.0 ],
 					"sig" : 0.0
 				}
 
@@ -348,16 +470,16 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 384.0, 493.5, 121.0, 47.0 ],
+					"patching_rect" : [ 352.0, 496.5, 121.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "live.gain~",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_shortname" : "live.gain~"
 						}
 
 					}
@@ -369,7 +491,7 @@
 , 			{
 				"box" : 				{
 					"allowreorder" : 1,
-					"clipheight" : 39.0,
+					"clipheight" : 38.166666666666664,
 					"data" : 					{
 						"clips" : [ 							{
 								"absolutepath" : "vibes-a1.aif",
@@ -377,148 +499,142 @@
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"formant" : [ 1 ],
-									"pitchshift" : [ 1 ],
-									"originaltempo" : [ 120 ],
-									"speed" : [ 1 ],
-									"quality" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"originallengthms" : [ 0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"slurtime" : [ 0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
+									"slurtime" : [ 0 ],
 									"originallength" : [ 0, "ticks" ],
+									"pitchshift" : [ 1 ],
 									"mode" : [ "basic" ],
+									"speed" : [ 1 ],
+									"originallengthms" : [ 0 ],
+									"originaltempo" : [ 120 ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"formant" : [ 1 ],
+									"play" : [ 0 ],
 									"pitchshiftcent" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "sho0630.aif",
-								"filename" : "sho0630.aif",
+								"absolutepath" : "4.aif",
+								"filename" : "4.aif",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"formant" : [ 1 ],
-									"pitchshift" : [ 1 ],
-									"originaltempo" : [ 120 ],
-									"speed" : [ 1 ],
-									"quality" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"originallengthms" : [ 0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"slurtime" : [ 0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0, "ticks" ],
+									"slurtime" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
-									"pitchshiftcent" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"play" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "drumLoop.aif",
-								"filename" : "drumLoop.aif",
+								"absolutepath" : "Kick 01.wav",
+								"filename" : "Kick 01.wav",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"formant" : [ 1 ],
-									"pitchshift" : [ 1 ],
-									"originaltempo" : [ 120 ],
-									"speed" : [ 1 ],
-									"quality" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"originallengthms" : [ 0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"slurtime" : [ 0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0, "ticks" ],
+									"slurtime" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
-									"pitchshiftcent" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"play" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "cherokee.aif",
-								"filename" : "cherokee.aif",
+								"absolutepath" : "1.aif",
+								"filename" : "1.aif",
 								"filekind" : "audiofile",
-								"selection" : [ 0.122033898305085, 0.311864406779661 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"formant" : [ 1 ],
-									"pitchshift" : [ 1 ],
-									"originaltempo" : [ 120 ],
-									"speed" : [ 1 ],
-									"quality" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"originallengthms" : [ 0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"slurtime" : [ 0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0, "ticks" ],
+									"slurtime" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
-									"pitchshiftcent" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"play" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "cello-f2.aif",
-								"filename" : "cello-f2.aif",
+								"absolutepath" : "clicky_kick.wav",
+								"filename" : "clicky_kick.wav",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"formant" : [ 1 ],
-									"pitchshift" : [ 1 ],
-									"originaltempo" : [ 120 ],
-									"speed" : [ 1 ],
-									"quality" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"originallengthms" : [ 0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"slurtime" : [ 0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0, "ticks" ],
+									"slurtime" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
-									"pitchshiftcent" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"play" : [ 0 ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "jongly.aif",
-								"filename" : "jongly.aif",
+								"absolutepath" : "talk.aiff",
+								"filename" : "talk.aiff",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"formant" : [ 1 ],
-									"pitchshift" : [ 1 ],
-									"originaltempo" : [ 120 ],
-									"speed" : [ 1 ],
-									"quality" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"originallengthms" : [ 0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"slurtime" : [ 0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0, "ticks" ],
+									"slurtime" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
-									"pitchshiftcent" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"play" : [ 0 ]
 								}
 
 							}
@@ -530,7 +646,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 384.0, 148.5, 350.0, 240.0 ]
+					"patching_rect" : [ 352.0, 151.5, 273.0, 235.0 ]
 				}
 
 			}
@@ -541,7 +657,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 384.0, 553.5, 45.0, 45.0 ]
+					"patching_rect" : [ 352.0, 556.5, 45.0, 45.0 ]
 				}
 
 			}
@@ -553,7 +669,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.0, 90.0, 24.0, 24.0 ]
+					"patching_rect" : [ 15.0, 93.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -564,7 +680,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 47.0, 140.5, 69.0, 22.0 ],
+					"patching_rect" : [ 15.0, 143.5, 69.0, 22.0 ],
 					"text" : "counter 1 8"
 				}
 
@@ -577,7 +693,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 279.0, 352.0, 50.0, 22.0 ]
+					"patching_rect" : [ 247.0, 355.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -591,7 +707,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.0, 166.706299000000001, 53.0, 23.0 ]
+					"patching_rect" : [ 15.0, 169.706299000000001, 53.0, 23.0 ]
 				}
 
 			}
@@ -604,7 +720,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 47.0, 194.0, 56.0, 23.0 ],
+					"patching_rect" : [ 15.0, 197.0, 56.0, 23.0 ],
 					"text" : "fetch $1"
 				}
 
@@ -619,7 +735,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.0, 226.0, 251.0, 124.0 ],
+					"patching_rect" : [ 15.0, 229.0, 251.0, 124.0 ],
 					"setminmax" : [ 1.0, 6.0 ],
 					"setstyle" : 1,
 					"settype" : 0,
@@ -636,13 +752,13 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 813.0, 86.0, 50.0, 22.0 ]
+					"patching_rect" : [ 714.0, 87.0, 50.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"clipheight" : 47.0,
+					"clipheight" : 46.0,
 					"data" : 					{
 						"clips" : [ 							{
 								"absolutepath" : "crashtest.mov",
@@ -653,34 +769,34 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u481000018" ],
 									"dim" : [ 1, 1 ],
-									"usedstrect" : [ 0 ],
-									"moviefile" : [ "" ],
-									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usesrcrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"time_secs" : [ 0 ],
-									"adapt" : [ 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
 									"rate" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
+									"vol" : [ 1 ],
+									"colormode" : [ "argb" ],
+									"looppoints_ms" : [ 0, 0 ],
+									"engine" : [ "avf" ],
+									"interp" : [ 0 ],
+									"time_secs" : [ 0 ],
+									"position" : [ 0 ],
+									"automatic" : [ 0 ],
+									"loopend" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"autostart" : [ 1 ],
+									"framereport" : [ 0 ],
 									"time" : [ 0 ],
 									"output_texture" : [ 0 ],
-									"loopend" : [ 0 ],
-									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
-									"unique" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"usesrcrect" : [ 0 ],
-									"looppoints_ms" : [ 0, 0 ],
-									"framereport" : [ 0 ],
-									"time_ms" : [ 0 ],
-									"interp" : [ 0 ],
-									"autostart" : [ 1 ],
-									"position" : [ 0 ],
-									"texture_name" : [ "u809000016" ],
-									"loopreport" : [ 0 ],
+									"adapt" : [ 1 ],
 									"loopstart" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"vol" : [ 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ]
+									"loopreport" : [ 0 ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"time_ms" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u809000016" ]
 								}
 
 							}
@@ -693,34 +809,34 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u481000018" ],
 									"dim" : [ 1, 1 ],
-									"usedstrect" : [ 0 ],
-									"moviefile" : [ "" ],
-									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usesrcrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"time_secs" : [ 0 ],
-									"adapt" : [ 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
 									"rate" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
+									"vol" : [ 1 ],
+									"colormode" : [ "argb" ],
+									"looppoints_ms" : [ 0, 0 ],
+									"engine" : [ "avf" ],
+									"interp" : [ 0 ],
+									"time_secs" : [ 0 ],
+									"position" : [ 0 ],
+									"automatic" : [ 0 ],
+									"loopend" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"autostart" : [ 1 ],
+									"framereport" : [ 0 ],
 									"time" : [ 0 ],
 									"output_texture" : [ 0 ],
-									"loopend" : [ 0 ],
-									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
-									"unique" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"usesrcrect" : [ 0 ],
-									"looppoints_ms" : [ 0, 0 ],
-									"framereport" : [ 0 ],
-									"time_ms" : [ 0 ],
-									"interp" : [ 0 ],
-									"autostart" : [ 1 ],
-									"position" : [ 0 ],
-									"texture_name" : [ "u809000016" ],
-									"loopreport" : [ 0 ],
+									"adapt" : [ 1 ],
 									"loopstart" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"vol" : [ 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ]
+									"loopreport" : [ 0 ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"time_ms" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u809000016" ]
 								}
 
 							}
@@ -733,34 +849,34 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u526000269" ],
 									"dim" : [ 1, 1 ],
-									"usedstrect" : [ 0 ],
-									"moviefile" : [ "" ],
-									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usesrcrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"time_secs" : [ 0 ],
-									"adapt" : [ 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
 									"rate" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
+									"vol" : [ 1 ],
+									"colormode" : [ "argb" ],
+									"looppoints_ms" : [ 0, 0 ],
+									"engine" : [ "avf" ],
+									"interp" : [ 0 ],
+									"time_secs" : [ 0 ],
+									"position" : [ 0 ],
+									"automatic" : [ 0 ],
+									"loopend" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"autostart" : [ 1 ],
+									"framereport" : [ 0 ],
 									"time" : [ 0 ],
 									"output_texture" : [ 0 ],
-									"loopend" : [ 0 ],
-									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
-									"unique" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"usesrcrect" : [ 0 ],
-									"looppoints_ms" : [ 0, 0 ],
-									"framereport" : [ 0 ],
-									"time_ms" : [ 0 ],
-									"interp" : [ 0 ],
-									"autostart" : [ 1 ],
-									"position" : [ 0 ],
-									"texture_name" : [ "u414000267" ],
-									"loopreport" : [ 0 ],
+									"adapt" : [ 1 ],
 									"loopstart" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"vol" : [ 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ]
+									"loopreport" : [ 0 ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"time_ms" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u414000267" ]
 								}
 
 							}
@@ -773,34 +889,34 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u481000018" ],
 									"dim" : [ 1, 1 ],
-									"usedstrect" : [ 0 ],
-									"moviefile" : [ "" ],
-									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usesrcrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"time_secs" : [ 0 ],
-									"adapt" : [ 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
 									"rate" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
+									"vol" : [ 1 ],
+									"colormode" : [ "argb" ],
+									"looppoints_ms" : [ 0, 0 ],
+									"engine" : [ "avf" ],
+									"interp" : [ 0 ],
+									"time_secs" : [ 0 ],
+									"position" : [ 0 ],
+									"automatic" : [ 0 ],
+									"loopend" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"autostart" : [ 1 ],
+									"framereport" : [ 0 ],
 									"time" : [ 0 ],
 									"output_texture" : [ 0 ],
-									"loopend" : [ 0 ],
-									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
-									"unique" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"usesrcrect" : [ 0 ],
-									"looppoints_ms" : [ 0, 0 ],
-									"framereport" : [ 0 ],
-									"time_ms" : [ 0 ],
-									"interp" : [ 0 ],
-									"autostart" : [ 1 ],
-									"position" : [ 0 ],
-									"texture_name" : [ "u809000016" ],
-									"loopreport" : [ 0 ],
+									"adapt" : [ 1 ],
 									"loopstart" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"vol" : [ 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ]
+									"loopreport" : [ 0 ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"time_ms" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u809000016" ]
 								}
 
 							}
@@ -813,34 +929,34 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u481000018" ],
 									"dim" : [ 1, 1 ],
-									"usedstrect" : [ 0 ],
-									"moviefile" : [ "" ],
-									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usesrcrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"time_secs" : [ 0 ],
-									"adapt" : [ 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
 									"rate" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
+									"vol" : [ 1 ],
+									"colormode" : [ "argb" ],
+									"looppoints_ms" : [ 0, 0 ],
+									"engine" : [ "avf" ],
+									"interp" : [ 0 ],
+									"time_secs" : [ 0 ],
+									"position" : [ 0 ],
+									"automatic" : [ 0 ],
+									"loopend" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"autostart" : [ 1 ],
+									"framereport" : [ 0 ],
 									"time" : [ 0 ],
 									"output_texture" : [ 0 ],
-									"loopend" : [ 0 ],
-									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
-									"unique" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"usesrcrect" : [ 0 ],
-									"looppoints_ms" : [ 0, 0 ],
-									"framereport" : [ 0 ],
-									"time_ms" : [ 0 ],
-									"interp" : [ 0 ],
-									"autostart" : [ 1 ],
-									"position" : [ 0 ],
-									"texture_name" : [ "u809000016" ],
-									"loopreport" : [ 0 ],
+									"adapt" : [ 1 ],
 									"loopstart" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"vol" : [ 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ]
+									"loopreport" : [ 0 ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"time_ms" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u809000016" ]
 								}
 
 							}
@@ -852,7 +968,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 739.0, 150.0, 365.0, 240.0 ]
+					"patching_rect" : [ 640.0, 151.0, 288.0, 235.0 ]
 				}
 
 			}
@@ -863,7 +979,21 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 739.0, 599.0, 160.0, 120.0 ]
+					"patching_rect" : [ 640.0, 600.0, 160.0, 120.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.541176470588235, 0.792156862745098, 0.407843137254902, 1.0 ],
+					"id" : "obj-13",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1001.0, 65.0, 281.0, 655.0 ],
+					"proportion" : 0.5
 				}
 
 			}
@@ -872,6 +1002,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 1 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -908,6 +1052,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"order" : 1,
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -1012,7 +1165,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-53", 1 ],
-					"midpoints" : [ 1095.5, 477.0, 860.5, 477.0 ],
+					"midpoints" : [ 887.5, 478.0, 761.5, 478.0 ],
 					"order" : 2,
 					"source" : [ "obj-44", 0 ]
 				}
@@ -1071,6 +1224,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
+					"order" : 0,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 1,
 					"source" : [ "obj-55", 0 ]
 				}
 
@@ -1095,6 +1257,13 @@
 					"destination" : [ "obj-49", 0 ],
 					"order" : 0,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -1137,8 +1306,46 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-5::obj-41" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-5::obj-16" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-15::obj-1" : [ "range[6]", "range", 0 ],
+			"obj-15::obj-50" : [ "contrast[11]", "contrast", 0 ],
+			"obj-15::obj-72" : [ "thresh", "thresh", 0 ],
+			"obj-8::obj-46" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
+			"obj-15::obj-34" : [ "pictctrl[63]", "pictctrl[1]", 0 ],
+			"obj-8::obj-50" : [ "y range", "y range", 0 ],
+			"obj-15::obj-71" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
 			"obj-16" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-15::obj-52" : [ "umenu[4]", "umenu", 0 ],
+			"obj-5::obj-6" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-8::obj-47" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-5::obj-12" : [ "textbutton", "textbutton", 0 ],
+			"obj-8::obj-48" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-15::obj-37" : [ "pictctrl[64]", "pictctrl[1]", 0 ],
+			"obj-5::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-8::obj-3" : [ "range[4]", "range", 0 ],
+			"obj-8::obj-37" : [ "x range", "x range", 0 ],
+			"obj-8::obj-36" : [ "probability", "probability", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-8::obj-46" : 				{
+					"parameter_longname" : "pictctrl[9]"
+				}
+,
+				"obj-15::obj-71" : 				{
+					"parameter_longname" : "pictctrl[2]"
+				}
+,
+				"obj-8::obj-47" : 				{
+					"parameter_longname" : "pictctrl[8]"
+				}
+,
+				"obj-8::obj-48" : 				{
+					"parameter_longname" : "pictctrl[3]"
+				}
 
 			}
 
@@ -1181,33 +1388,103 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sho0630.aif",
-				"bootpath" : "C74:/media/msp",
+				"name" : "4.aif",
+				"bootpath" : "~/Documents/Processing/libraries/sound/examples/Soundfile/Keyboard/data",
+				"patcherrelativepath" : "../../../../../../Processing/libraries/sound/examples/Soundfile/Keyboard/data",
 				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "drumLoop.aif",
-				"bootpath" : "C74:/media/msp",
+				"name" : "Kick 01.wav",
+				"bootpath" : "C74:/packages/MaxIntroLessons/media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "1.aif",
+				"bootpath" : "~/Documents/Processing/libraries/sound/examples/Soundfile/Keyboard/data",
+				"patcherrelativepath" : "../../../../../../Processing/libraries/sound/examples/Soundfile/Keyboard/data",
 				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cherokee.aif",
-				"bootpath" : "C74:/media/msp",
+				"name" : "clicky_kick.wav",
+				"bootpath" : "~/Google Drive/Ableton Files/User Library/Presets/Audio Effects/Max Audio Effect/roberto_Max4Live_patches/Audio FX patches/rp_shuffler+env_1buffer Project/Samples/Imported",
+				"patcherrelativepath" : "../../../../../../../Google Drive/Ableton Files/User Library/Presets/Audio Effects/Max Audio Effect/roberto_Max4Live_patches/Audio FX patches/rp_shuffler+env_1buffer Project/Samples/Imported",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "talk.aiff",
+				"bootpath" : "C74:/media/jitter",
 				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cello-f2.aif",
-				"bootpath" : "C74:/media/msp",
-				"type" : "AIFF",
+				"name" : "vz.projectr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jongly.aif",
-				"bootpath" : "C74:/media/msp",
-				"type" : "AIFF",
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-context.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-disable.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.sketchr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-routemat.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.foggr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sprinkle.genjit",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"type" : "gJIT",
 				"implicit" : 1
 			}
  ],
@@ -1233,11 +1510,11 @@
 , 			{
 				"name" : "GetsTheJobDone",
 				"default" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.65 ],
+					"fontsize" : [ 11.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontname" : [ "Andale Mono" ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.65 ],
 					"accentcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"fontsize" : [ 11.0 ],
 					"textjustification" : [ 2 ]
 				}
 ,
@@ -1247,9 +1524,11 @@
 , 			{
 				"name" : "Luca",
 				"default" : 				{
-					"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
+					"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
 					"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
-					"fontname" : [ "Open Sans Semibold" ],
+					"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1260,10 +1539,8 @@
 						"autogradient" : 0
 					}
 ,
-					"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
-					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ]
+					"fontname" : [ "Open Sans Semibold" ],
+					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1272,8 +1549,8 @@
 , 			{
 				"name" : "Matt",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 10.0 ]
+					"fontsize" : [ 10.0 ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1282,7 +1559,6 @@
 , 			{
 				"name" : "SleekBlack",
 				"default" : 				{
-					"fontname" : [ "Avenir Next Ultra Light" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -1295,6 +1571,7 @@
 						"autogradient" : 0
 					}
 ,
+					"fontname" : [ "Avenir Next Ultra Light" ],
 					"textjustification" : [ 1 ]
 				}
 ,
@@ -1314,8 +1591,10 @@
 , 			{
 				"name" : "WTF",
 				"default" : 				{
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
+					"fontsize" : [ 18.0 ],
 					"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
-					"fontname" : [ "HydrogenType" ],
 					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -1327,10 +1606,8 @@
 						"autogradient" : 0
 					}
 ,
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
-					"accentcolor" : [ 0.50764, 0.065317, 0.112129, 1.0 ],
-					"fontsize" : [ 18.0 ],
-					"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
+					"fontname" : [ "HydrogenType" ],
+					"accentcolor" : [ 0.50764, 0.065317, 0.112129, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1339,9 +1616,10 @@
 , 			{
 				"name" : "classic",
 				"default" : 				{
-					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+					"bgcolor" : [ 0.83978, 0.839941, 0.839753, 1.0 ],
+					"fontsize" : [ 9.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontname" : [ "Geneva" ],
+					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 					"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -1352,9 +1630,8 @@
 						"proportion" : 0.39
 					}
 ,
-					"bgcolor" : [ 0.83978, 0.839941, 0.839753, 1.0 ],
-					"accentcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"fontsize" : [ 9.0 ]
+					"fontname" : [ "Geneva" ],
+					"accentcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1408,10 +1685,10 @@
 , 			{
 				"name" : "classicKslider",
 				"default" : 				{
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
+					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1420,8 +1697,8 @@
 , 			{
 				"name" : "classicLed",
 				"default" : 				{
-					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.6, 0.0, 0.0, 1.0 ]
+					"elementcolor" : [ 0.6, 0.0, 0.0, 1.0 ],
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1449,9 +1726,9 @@
 , 			{
 				"name" : "classicNodes",
 				"default" : 				{
-					"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
+					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 					"fontsize" : [ 9.0 ],
-					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
+					"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1496,8 +1773,8 @@
 , 			{
 				"name" : "classicScope~",
 				"default" : 				{
-					"color" : [ 0.462745, 0.933333, 0.0, 1.0 ],
-					"bgcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
+					"bgcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+					"color" : [ 0.462745, 0.933333, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1506,8 +1783,8 @@
 , 			{
 				"name" : "classicTab",
 				"default" : 				{
-					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"elementcolor" : [ 0.839216, 0.839216, 0.839216, 1.0 ]
+					"elementcolor" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
+					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1526,8 +1803,8 @@
 , 			{
 				"name" : "classicToggle",
 				"default" : 				{
-					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-					"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.0 ]
+					"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1545,8 +1822,8 @@
 , 			{
 				"name" : "classicWaveform~",
 				"default" : 				{
-					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ]
+					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ],
+					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1565,8 +1842,8 @@
 						"proportion" : 0.39
 					}
 ,
-					"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
-					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1574,21 +1851,21 @@
 			}
 , 			{
 				"name" : "default_style",
-				"toggle" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
+				"newobj" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"button" : 				{
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 ,
-				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				"toggle" : 				{
+					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1596,21 +1873,21 @@
 			}
 , 			{
 				"name" : "default_style-1",
-				"toggle" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
+				"newobj" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"button" : 				{
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ]
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
 				}
 ,
-				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				"toggle" : 				{
+					"bgcolor" : [ 0.636487, 0.648652, 0.683149, 1.0 ],
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1624,7 +1901,8 @@
 , 			{
 				"name" : "jpatcher002",
 				"default" : 				{
-					"fontname" : [ "Ableton Sans Book" ],
+					"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
+					"fontsize" : [ 9.5 ],
 					"patchlinecolor" : [ 0.65098, 0.65098, 0.65098, 0.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -1635,8 +1913,7 @@
 						"proportion" : 0.39
 					}
 ,
-					"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
-					"fontsize" : [ 9.5 ]
+					"fontname" : [ "Ableton Sans Book" ]
 				}
 ,
 				"parentstyle" : "",
@@ -1645,6 +1922,10 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
 					"bgfillcolor" : 					{
@@ -1657,12 +1938,8 @@
 						"autogradient" : 0
 					}
 ,
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1690,59 +1967,64 @@
 , 			{
 				"name" : "master_style",
 				"multislider" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"kslider" : 				{
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"ezadc~" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-				}
-,
-				"slider" : 				{
-					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"function" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"gain~" : 				{
-					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
-					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
-				"ezdac~" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-				}
-,
-				"button" : 				{
-					"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
+				"slider" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"button" : 				{
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"color" : [ 1.0, 0.95051, 0.0, 1.0 ]
+				}
+,
+				"attrui" : 				{
+					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"ezdac~" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"function" : 				{
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"kslider" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"gain~" : 				{
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 1.0, 0.861448, 0.16921, 1.0 ]
 				}
 ,
 				"message" : 				{
@@ -1757,11 +2039,6 @@
 						"autogradient" : 0
 					}
 
-				}
-,
-				"attrui" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -1828,8 +2105,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1838,8 +2115,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1857,8 +2134,8 @@
 , 			{
 				"name" : "purple",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
-					"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ]
+					"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ],
+					"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1876,8 +2153,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1904,8 +2181,8 @@
 , 			{
 				"name" : "tastefulltoggle",
 				"default" : 				{
-					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
-					"bgcolor" : [ 0.185512, 0.263736, 0.260626, 1.0 ]
+					"bgcolor" : [ 0.185512, 0.263736, 0.260626, 1.0 ],
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1914,9 +2191,9 @@
 , 			{
 				"name" : "tastefultoggle",
 				"default" : 				{
-					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"bgcolor" : [ 0.287863, 0.333333, 0.329398, 1.0 ],
-					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1925,8 +2202,8 @@
 , 			{
 				"name" : "test",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 10.0 ]
+					"fontsize" : [ 10.0 ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1935,11 +2212,11 @@
 , 			{
 				"name" : "whitey",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"fontname" : [ "Dirty Ego" ],
-					"patchlinecolor" : [ 0.199068, 0.062496, 0.060031, 0.9 ],
+					"selectioncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
 					"fontsize" : [ 36.0 ],
-					"selectioncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+					"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"patchlinecolor" : [ 0.199068, 0.062496, 0.060031, 0.9 ],
+					"fontname" : [ "Dirty Ego" ]
 				}
 ,
 				"parentstyle" : "",
