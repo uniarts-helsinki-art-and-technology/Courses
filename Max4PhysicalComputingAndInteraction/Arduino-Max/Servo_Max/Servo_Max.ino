@@ -20,6 +20,8 @@ int startIn;
 int start = '<';
 
 void setup() {
+    // initialize the serial communication:
+  Serial.begin(19200);
   myservo.attach(servoPin);  // attaches the servo on pin 9 to the servo object
 }
 
@@ -34,10 +36,10 @@ void loop() {
 
       if (idIn == servoPin) {
 
-        val = map(data, 0, 1023, 0, 180);     // scale it to use it with the servo (value between 0 and 180)
-        myservo.write(val);                  // sets the servo position according to the scaled value
+        //val = map(data, 0, 1023, 0, 180);     // scale it to use it with the servo (value between 0 and 180)
+        myservo.write(data);                  // sets the servo position according to the scaled value
 
-        Serial.println(val);
+        Serial.println(data);
       }
     }
   }
