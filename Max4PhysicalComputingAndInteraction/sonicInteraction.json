@@ -47,10 +47,6 @@
 					"bp.Feedback Delay[1]::time" : [ 137.00787401574803 ],
 					"slidr::up" : [  ],
 					"slidr::down" : [  ],
-					"bp.Gain and Bias::Bias" : [ 0.0 ],
-					"bp.Gain and Bias::Bypass" : [ 0.0 ],
-					"bp.Gain and Bias::Gain" : [ 100.0 ],
-					"bp.Gain and Bias::presets" : [ 0.0 ],
 					"oper8r::operator" : [  ],
 					"bp.Stereo Mixer::Mute" : [ 0.0 ],
 					"bp.Stereo Mixer::live.slider" : [ -72.0 ],
@@ -62,7 +58,11 @@
 					"bp.Xfade[3]::bypass" : [ 0.0 ],
 					"bp.Xfade[4]::Fade" : [ 0.0 ],
 					"bp.Xfade[4]::Gain" : [ 0.0 ],
-					"bp.Xfade[4]::bypass" : [ 0.0 ]
+					"bp.Xfade[4]::bypass" : [ 0.0 ],
+					"gainAndBias::Bias" : [  ],
+					"gainAndBias::Bypass" : [  ],
+					"gainAndBias::Gain" : [  ],
+					"gainAndBias::presets" : [  ]
 				}
 
 			}
@@ -112,10 +112,6 @@
 					"bp.Feedback Delay[1]::time" : [ 137.00787401574803 ],
 					"slidr::up" : [  ],
 					"slidr::down" : [  ],
-					"bp.Gain and Bias::Bias" : [ 0.0 ],
-					"bp.Gain and Bias::Bypass" : [ 0.0 ],
-					"bp.Gain and Bias::Gain" : [ 100.0 ],
-					"bp.Gain and Bias::presets" : [ 0.0 ],
 					"oper8r::operator" : [  ],
 					"bp.Stereo Mixer::Mute" : [ 0.0 ],
 					"bp.Stereo Mixer::live.slider" : [ -4.983400066327604 ],
@@ -127,7 +123,11 @@
 					"bp.Xfade[3]::bypass" : [ 0.0 ],
 					"bp.Xfade[4]::Fade" : [ 0.0 ],
 					"bp.Xfade[4]::Gain" : [ 0.0 ],
-					"bp.Xfade[4]::bypass" : [ 0.0 ]
+					"bp.Xfade[4]::bypass" : [ 0.0 ],
+					"gainAndBias::Bias" : [  ],
+					"gainAndBias::Bypass" : [  ],
+					"gainAndBias::Gain" : [  ],
+					"gainAndBias::presets" : [  ]
 				}
 
 			}
@@ -177,10 +177,6 @@
 					"bp.Feedback Delay[1]::time" : [ 137.00787401574803 ],
 					"slidr::up" : [  ],
 					"slidr::down" : [  ],
-					"bp.Gain and Bias::Bias" : [  ],
-					"bp.Gain and Bias::Bypass" : [  ],
-					"bp.Gain and Bias::Gain" : [  ],
-					"bp.Gain and Bias::presets" : [  ],
 					"oper8r::operator" : [  ],
 					"bp.Stereo Mixer::Mute" : [  ],
 					"bp.Stereo Mixer::live.slider" : [  ],
@@ -192,7 +188,11 @@
 					"bp.Xfade[3]::bypass" : [  ],
 					"bp.Xfade[4]::Fade" : [  ],
 					"bp.Xfade[4]::Gain" : [  ],
-					"bp.Xfade[4]::bypass" : [  ]
+					"bp.Xfade[4]::bypass" : [  ],
+					"gainAndBias::Bias" : [  ],
+					"gainAndBias::Bypass" : [  ],
+					"gainAndBias::Gain" : [  ],
+					"gainAndBias::presets" : [  ]
 				}
 
 			}
@@ -242,10 +242,6 @@
 					"bp.Feedback Delay[1]::time" : [ 137.00787401574803 ],
 					"slidr::up" : [  ],
 					"slidr::down" : [  ],
-					"bp.Gain and Bias::Bias" : [  ],
-					"bp.Gain and Bias::Bypass" : [  ],
-					"bp.Gain and Bias::Gain" : [  ],
-					"bp.Gain and Bias::presets" : [  ],
 					"oper8r::operator" : [  ],
 					"bp.Stereo Mixer::Mute" : [  ],
 					"bp.Stereo Mixer::live.slider" : [  ],
@@ -257,7 +253,11 @@
 					"bp.Xfade[3]::bypass" : [  ],
 					"bp.Xfade[4]::Fade" : [  ],
 					"bp.Xfade[4]::Gain" : [  ],
-					"bp.Xfade[4]::bypass" : [  ]
+					"bp.Xfade[4]::bypass" : [  ],
+					"gainAndBias::Bias" : [  ],
+					"gainAndBias::Bypass" : [  ],
+					"gainAndBias::Gain" : [  ],
+					"gainAndBias::presets" : [  ]
 				}
 
 			}
@@ -307,10 +307,6 @@
 					"bp.Feedback Delay[1]::time" : [ 137.00787401574803 ],
 					"slidr::up" : [  ],
 					"slidr::down" : [  ],
-					"bp.Gain and Bias::Bias" : [  ],
-					"bp.Gain and Bias::Bypass" : [  ],
-					"bp.Gain and Bias::Gain" : [  ],
-					"bp.Gain and Bias::presets" : [  ],
 					"oper8r::operator" : [  ],
 					"bp.Stereo Mixer::Mute" : [  ],
 					"bp.Stereo Mixer::live.slider" : [  ],
@@ -322,7 +318,11 @@
 					"bp.Xfade[3]::bypass" : [  ],
 					"bp.Xfade[4]::Fade" : [  ],
 					"bp.Xfade[4]::Gain" : [  ],
-					"bp.Xfade[4]::bypass" : [  ]
+					"bp.Xfade[4]::bypass" : [  ],
+					"gainAndBias::Bias" : [  ],
+					"gainAndBias::Bypass" : [  ],
+					"gainAndBias::Gain" : [  ],
+					"gainAndBias::presets" : [  ]
 				}
 
 			}
@@ -372,10 +372,6 @@
 					"bp.Feedback Delay[1]::time" : [ 137.00787401574803 ],
 					"slidr::up" : [ 20.0 ],
 					"slidr::down" : [ 20.0 ],
-					"bp.Gain and Bias::Bias" : [ 0.0 ],
-					"bp.Gain and Bias::Bypass" : [ 0.0 ],
-					"bp.Gain and Bias::Gain" : [ 100.0 ],
-					"bp.Gain and Bias::presets" : [ 0.0 ],
 					"oper8r::operator" : [ 1.0 ],
 					"bp.Stereo Mixer::Mute" : [ 0.0 ],
 					"bp.Stereo Mixer::live.slider" : [ -3.397325985854252 ],
@@ -387,7 +383,11 @@
 					"bp.Xfade[3]::bypass" : [ 0.0 ],
 					"bp.Xfade[4]::Fade" : [ -5.0 ],
 					"bp.Xfade[4]::Gain" : [ 0.0 ],
-					"bp.Xfade[4]::bypass" : [ 0.0 ]
+					"bp.Xfade[4]::bypass" : [ 0.0 ],
+					"gainAndBias::Bias" : [  ],
+					"gainAndBias::Bypass" : [  ],
+					"gainAndBias::Gain" : [  ],
+					"gainAndBias::presets" : [  ]
 				}
 
 			}
@@ -437,22 +437,22 @@
 					"bp.Feedback Delay[1]::time" : [ 137.00787401574803 ],
 					"slidr::up" : [ 20.0 ],
 					"slidr::down" : [ 20.0 ],
-					"bp.Gain and Bias::Bias" : [ -0.944881889763779 ],
-					"bp.Gain and Bias::Bypass" : [ 0.0 ],
-					"bp.Gain and Bias::Gain" : [ 200.0 ],
-					"bp.Gain and Bias::presets" : [ 0.0 ],
 					"oper8r::operator" : [ 1.0 ],
 					"bp.Stereo Mixer::Mute" : [ 0.0 ],
 					"bp.Stereo Mixer::live.slider" : [ -1.674070186013296 ],
 					"bp.Stereo Mixer::live.slider[1]" : [ -1.721364454243783 ],
 					"bp.Stereo Mixer::live.slider[2]" : [ -2.924294526814094 ],
 					"bp.Stereo Mixer::live.slider[3]" : [ -5.297227624935417 ],
-					"bp.Xfade[3]::Fade" : [ -5.0 ],
+					"bp.Xfade[3]::Fade" : [ 0.0 ],
 					"bp.Xfade[3]::Gain" : [ 0.0 ],
 					"bp.Xfade[3]::bypass" : [ 0.0 ],
-					"bp.Xfade[4]::Fade" : [ -5.0 ],
+					"bp.Xfade[4]::Fade" : [ 0.0 ],
 					"bp.Xfade[4]::Gain" : [ 0.0 ],
-					"bp.Xfade[4]::bypass" : [ 0.0 ]
+					"bp.Xfade[4]::bypass" : [ 0.0 ],
+					"gainAndBias::Bias" : [ 0.0 ],
+					"gainAndBias::Bypass" : [ 0.0 ],
+					"gainAndBias::Gain" : [ 173.228346456692691 ],
+					"gainAndBias::presets" : [ 0.0 ]
 				}
 
 			}
