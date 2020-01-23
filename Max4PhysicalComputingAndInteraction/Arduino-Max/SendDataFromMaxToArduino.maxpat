@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 60.0, 356.0, 66.0, 22.0 ],
+					"text" : "r servoPos"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "slider",
 					"numinlets" : 1,
@@ -303,7 +315,7 @@
 					"bgfillcolor_type" : "color",
 					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-149",
-					"items" : [ "Bluetooth-Incoming-Port", ",", "BITalino-01-25-DevB", ",", "usbmodem1431410" ],
+					"items" : [ "usbmodem1431420", ",", "Bluetooth-Incoming-Port", ",", "BITalino-01-25-DevB", ",", "PioneerX-CM56-SerialPort" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -315,7 +327,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 2.0,
 							"parameter_shortname" : "serialPort",
 							"parameter_type" : 3,
 							"parameter_longname" : "serialPort"
@@ -386,8 +398,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 451.5, 227.0, 60.5, 22.0 ],
-					"text" : ""
+					"patching_rect" : [ 451.5, 227.0, 60.5, 22.0 ]
 				}
 
 			}
