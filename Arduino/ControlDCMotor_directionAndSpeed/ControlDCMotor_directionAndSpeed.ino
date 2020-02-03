@@ -57,7 +57,7 @@ void loop() {
   Serial.print("potentiometer: ");
   Serial.println(sensorValue3);
 
-  int motorSpeed = map(sensorValue3, 1023, 0, 0, 255);
+  int motorSpeed = map(sensorValue3, 1023, 0, 0, 128); // vaihda 128 > 255 lisätäksesi nopeutta, change value 128 to 255 for more speed
 
   if (motorSpeed < 20) {
     myMotor->run(RELEASE);
