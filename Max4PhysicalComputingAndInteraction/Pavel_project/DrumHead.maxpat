@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1651.0, 898.0 ],
+		"rect" : [ 34.0, 79.0, 1734.0, 898.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,43 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-188",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 499.0, 240.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-187",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"patching_rect" : [ 81.0, 510.0, 88.5, 22.0 ],
+					"text" : "t i b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-186",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 339.25, 182.0, 29.5, 22.0 ],
+					"text" : "f"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-185",
 					"maxclass" : "newobj",
@@ -188,8 +225,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 159.5, 372.0, 59.0, 22.0 ],
-					"text" : "random 4"
+					"patching_rect" : [ 159.5, 372.0, 66.0, 22.0 ],
+					"text" : "random 10"
 				}
 
 			}
@@ -1799,8 +1836,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 339.0, 231.0, 110.0, 22.0 ],
-					"text" : "scale 0. 1. 50. 120."
+					"patching_rect" : [ 339.0, 231.0, 117.0, 22.0 ],
+					"text" : "scale 0. 1. 100. 120."
 				}
 
 			}
@@ -1813,7 +1850,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 339.0, 186.5, 64.0, 31.0 ]
+					"patching_rect" : [ 339.0, 82.5, 64.0, 31.0 ]
 				}
 
 			}
@@ -1824,7 +1861,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 339.0, 155.0, 110.0, 22.0 ],
+					"patching_rect" : [ 339.0, 51.0, 110.0, 22.0 ],
 					"text" : "r triggerContactMic"
 				}
 
@@ -1836,7 +1873,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 155.0, 529.0, 83.0, 22.0 ],
+					"patching_rect" : [ 151.0, 574.0, 83.0, 22.0 ],
 					"text" : "loadmess 100"
 				}
 
@@ -2104,7 +2141,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"patching_rect" : [ 100.0, 240.0, 36.0, 22.0 ],
-					"text" : "urn 6"
+					"text" : "urn 8"
 				}
 
 			}
@@ -2117,7 +2154,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 311.0, 595.0, 22.0, 140.0 ]
+					"patching_rect" : [ 307.0, 624.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -2130,7 +2167,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 274.0, 595.0, 22.0, 140.0 ]
+					"patching_rect" : [ 270.0, 624.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -2432,10 +2469,10 @@
 					"id" : "obj-54",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 773.0, 157.0, 22.0, 22.0 ],
-					"text" : "t b"
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "float" ],
+					"patching_rect" : [ 773.0, 157.0, 29.5, 22.0 ],
+					"text" : "t b f"
 				}
 
 			}
@@ -2630,7 +2667,7 @@
 			}
 , 			{
 				"box" : 				{
-					"clipheight" : 33.833333333333336,
+					"clipheight" : 28.75,
 					"data" : 					{
 						"clips" : [ 							{
 								"absolutepath" : "/Users/robertopugliese/Documents/GitHub/KuvA/Courses2020/Courses/Max4PhysicalComputingAndInteraction/Pavel_project/sounds/soundtrack/Samle01 Severnoi Zare.wav",
@@ -2776,6 +2813,54 @@
 								}
 
 							}
+, 							{
+								"absolutepath" : "/Users/robertopugliese/Documents/GitHub/KuvA/Courses2020/Courses/Max4PhysicalComputingAndInteraction/Pavel_project/sounds/soundtrack/sample02 Parohodu.wav",
+								"filename" : "sample02 Parohodu.wav",
+								"filekind" : "audiofile",
+								"loop" : 0,
+								"content_state" : 								{
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"mode" : [ "basic" ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"quality" : [ "basic" ],
+									"slurtime" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
+									"play" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"originallengthms" : [ 0.0 ],
+									"basictuning" : [ 440 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/robertopugliese/Documents/GitHub/KuvA/Courses2020/Courses/Max4PhysicalComputingAndInteraction/Pavel_project/sounds/soundtrack/Samle03 Karelskaya bereza.wav",
+								"filename" : "Samle03 Karelskaya bereza.wav",
+								"filekind" : "audiofile",
+								"loop" : 0,
+								"content_state" : 								{
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"mode" : [ "basic" ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"quality" : [ "basic" ],
+									"slurtime" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
+									"play" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"originallengthms" : [ 0.0 ],
+									"basictuning" : [ 440 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -2784,7 +2869,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 274.0, 354.0, 214.0, 209.0 ]
+					"patching_rect" : [ 274.0, 354.0, 216.0, 238.0 ]
 				}
 
 			}
@@ -3788,7 +3873,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 136.0, 208.0, 2339.0, 626.0 ],
+						"rect" : [ 63.0, 137.0, 2339.0, 626.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3815,6 +3900,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-79",
@@ -6615,7 +6701,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
+					"destination" : [ "obj-187", 0 ],
 					"source" : [ "obj-170", 0 ]
 				}
 
@@ -6736,6 +6822,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"order" : 0,
+					"source" : [ "obj-186", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
+					"source" : [ "obj-186", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-186", 0 ],
+					"source" : [ "obj-187", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-187", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-138", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
@@ -6759,13 +6875,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-125", 0 ],
 					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -6864,7 +6973,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-186", 1 ],
 					"order" : 2,
 					"source" : [ "obj-38", 0 ]
 				}
@@ -7013,6 +7122,13 @@
 					"destination" : [ "obj-59", 0 ],
 					"order" : 0,
 					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 1 ],
+					"source" : [ "obj-54", 1 ]
 				}
 
 			}
