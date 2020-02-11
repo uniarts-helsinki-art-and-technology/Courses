@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 993.0, 717.0 ],
+		"rect" : [ 498.0, 100.0, 993.0, 717.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -97,7 +97,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 589.667602999999986, 126.0, 23.0 ],
-					"presentation_linecount" : 3,
 					"text" : "get weather[0]::main"
 				}
 
@@ -137,7 +136,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 160.0, 105.0, 811.0, 23.0 ],
-					"presentation_linecount" : 3,
 					"text" : "download http://api.openweathermap.org/data/2.5/weather?id=3169070&APPID=6abee564ac11b93f53e415c998655b29 weather_data.json"
 				}
 
@@ -166,7 +164,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 103.0, 68.0, 803.0, 23.0 ],
-					"presentation_linecount" : 2,
 					"text" : "download http://api.openweathermap.org/data/2.5/weather?q=Helsinki&APPID=6abee564ac11b93f53e415c998655b29 weather_data.json"
 				}
 
@@ -245,7 +242,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 556.0, 250.5, 122.0, 27.0 ],
+					"patching_rect" : [ 1020.0, 261.5, 122.0, 27.0 ],
 					"text" : "json_parser.js"
 				}
 
@@ -259,7 +256,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 556.0, 278.5, 395.0, 100.0 ],
+					"patching_rect" : [ 1020.0, 289.5, 395.0, 100.0 ],
 					"text" : "function anything()\n{\n\tvar a = arrayfromargs(messagename,arguments);\n\tvar parsed = JSON.parse(a);\n\toutlet(0,parsed.name + \" \" + parsed.value)\n}\n"
 				}
 
@@ -272,7 +269,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 568.5, 443.5, 34.0, 22.0 ],
+					"patching_rect" : [ 1032.5, 454.5, 34.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -286,7 +283,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 568.5, 388.5, 97.0, 22.0 ],
+					"patching_rect" : [ 1032.5, 399.5, 97.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "json_parser.js",
 						"parameter_enable" : 0
@@ -664,7 +661,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "json_parser.js",
-				"bootpath" : "~/Documents/GitHub/KuvA/Courses2020/Courses/Max4PhysicalComputingAndInteraction/examples",
+				"bootpath" : "~/Documents/GitHub/KuvA/Courses2020/Courses/Max4PhysicalComputingAndInteraction/examples/openData",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
